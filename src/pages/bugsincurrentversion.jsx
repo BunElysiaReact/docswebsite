@@ -1,5 +1,5 @@
 import { Link } from 'bertui/router'; // Assuming you might link to the Changelog or Home
-import React from 'react';
+
 import "../styles/bugs-in-current-version.css"
 export default function BugsInCurrentVersion() {
     return (

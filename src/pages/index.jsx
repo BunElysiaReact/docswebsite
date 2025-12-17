@@ -97,13 +97,13 @@ export default function Home() {
                             title="Initial Build Time" 
                             time="2 Seconds" 
                             description="The first full-run build is fast." 
-                            imageSource="../images/build4.png"
+                            imageSource="../images/build.png"
                         />
                         <MetricDisplay 
                             title="Optimized Build Time" 
                             time="265ms" 
                             description="Subsequent production builds are nearly instantaneous." 
-                            imageSource="/images/build7.png" 
+                            imageSource="../images/build7.png" 
                         />
                     </div>
                     
