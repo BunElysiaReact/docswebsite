@@ -9,6 +9,7 @@ export default function Changelog() {
             </header>
 
             {/* -- MAJOR RELEASE CARD -- */}
+            <div className="changelog-entry"> v1.0.2 well now we morph all css to 1 file multiple css will be sorted out later in the near future </div>
             <div className="changelog-entry"> v1.0.1 comes with minor css path fixes in build</div>
             <div className="changelog-entry major-release">
                 <div className="version-badge">v1.0.0</div>
