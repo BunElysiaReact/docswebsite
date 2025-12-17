@@ -303,3 +303,225 @@
     font-size: 1.2rem;
     font-weight: 600;
 }
+/* ===== V1.0.0 STYLES ===== */
+.version-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 1.5rem 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+}
+
+.home-hero {
+    padding: 3rem 0;
+    margin-bottom: 3rem;
+}
+
+/* ===== SPEED METRICS ===== */
+.speed-comparison {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin: 3rem 0;
+    flex-wrap: wrap;
+}
+
+.comparison-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+    min-width: 300px;
+    max-width: 450px;
+}
+
+.comparison-item.bertui-highlight {
+    border: 3px solid #667eea;
+    box-shadow: 0 15px 40px rgba(102, 126, 234, 0.2);
+    position: relative;
+    transform: scale(1.05);
+}
+
+.comparison-item.bertui-highlight::before {
+    content: "⚡ FASTEST";
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #667eea;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.comparison-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.comparison-time {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #764ba2;
+    margin: 1rem 0;
+}
+
+.comparison-item.bertui-highlight .comparison-time {
+    color: #667eea;
+    font-size: 3.5rem;
+}
+
+.comparison-desc {
+    color: #666;
+    margin-top: 1rem;
+    font-size: 0.95rem;
+}
+
+.comparison-vs {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #999;
+    background: white;
+    padding: 1rem 2rem;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.speed-image.large {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    margin: 1rem 0;
+}
+
+/* ===== BUILD GALLERY ===== */
+.build-gallery {
+    margin: 4rem 0;
+}
+
+.build-gallery h3 {
+    font-size: 2rem;
+    color: #667eea;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.gallery-item {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+}
+
+.gallery-caption {
+    padding: 1.5rem;
+}
+
+.gallery-caption h4 {
+    margin: 0 0 0.5rem 0;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.gallery-caption p {
+    margin: 0;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* ===== MISSING IMAGE NOTE ===== */
+.missing-image-note {
+    background: #f8fafc;
+    border-left: 4px solid #94a3b8;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    margin: 2rem auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+.missing-image-note p {
+    margin: 0;
+    color: #475569;
+    font-size: 0.95rem;
+}
+
+/* ===== CTA SECONDARY ===== */
+.home-cta-secondary {
+    margin-top: 2rem;
+}
+
+.btn-large {
+    padding: 1.2rem 3rem;
+    font-size: 1.2rem;
+}
+
+/* ===== FOOTER NOTE ===== */
+.footer-note {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.6);
+    font-style: italic;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .speed-comparison {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .comparison-item.bertui-highlight {
+        transform: none;
+        order: -1;
+    }
+    
+    .comparison-vs {
+        transform: rotate(90deg);
+        margin: 1rem 0;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .speed-image.large {
+        max-width: 100%;
+    }
+}

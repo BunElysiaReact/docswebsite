@@ -2,39 +2,46 @@ import { Link } from 'bertui/router';
 import '../styles/home.css';
 
 export default function Home() {
-    // NOTE: Temporarily imported React manually to bypass the bug discovered earlier.
-    // import React from 'react';
-
     return (
         <div className="home-container">
             <nav className="home-nav">
-                <h2 className="home-logo">⚡ BertUI</h2>
+                <h2 className="home-logo">⚡ BertUI v1.0.0</h2>
                 <div className="home-nav-links">
                     <Link to="/" className="nav-link active">Home</Link>
                     <Link to="/about" className="nav-link">About</Link>
                     <Link to="/blog" className="nav-link">Blog</Link>
-                    <Link to="https://github.com/BunElysiaReact/BERTUI" target="_blank" rel="noopener noreferrer" className="nav-link">Github</Link>
+                    <Link to="https://github.com/BunElysiaReact/BERTUI" target="_blank" rel="noopener noreferrer" className="nav-link">GitHub</Link>
                     <Link to="/changelog" className="nav-link">Changelog</Link>
                     <Link to="https://discord.gg/kvbXfkJG" target="_blank" rel="noopener noreferrer" className="nav-link">Discord</Link>
-                    <Link to="/bugsincurrentversion" className="nav-link">Reported Bugs</Link>
-                    <Link to="/questions" className="nav-link">Community Questions</Link>
-                    <Link to="/deployment" className="nav-link">Deployment Tutorial</Link>
-
+                    <Link to="/getstarted" className="nav-link">Get Started</Link>
                 </div>
             </nav>
 
             <main className="home-main">
-                <h1 className="home-title">
-                    Build Lightning-Fast
-                    <br />
-                    React Apps
-                </h1>
+                <div className="home-hero">
+                    <h1 className="home-title">
+                        Build Lightning-Fast
+                        <br />
+                        React Apps
+                    </h1>
 
-                <p className="home-subtitle">
-                    File-based routing • Zero config • Blazing fast HMR • Powered by Bun
-                </p>
+                    <p className="home-subtitle">
+                        File-based routing • Zero config • Production Ready v1.0.0 • Powered by Bun
+                    </p>
 
-                {/* --- TypeScript Limitation Note (Formatted) --- */}
+                    <div className="version-badge">v1.0.0 STABLE</div>
+                    
+                    <div className="home-cta">
+                        <Link to="/getstarted" className="btn btn-primary">
+                            Get Started →
+                        </Link>
+                        <Link to="/about" className="btn btn-secondary">
+                            Learn More
+                        </Link>
+                    </div>
+                </div>
+
+                {/* --- TypeScript Note --- */}
                 <div className="home-ts-note">
                     <h3 className="ts-note-title">🚧 Current State: JavaScript Focus (v1.0.0)</h3>
                     <p className="ts-note-text">
@@ -43,48 +50,9 @@ export default function Home() {
                     <p className="ts-note-recommendation">
                         For the best development experience, we recommend using <code>.js</code> and <code>.jsx</code> file extensions for now.
                     </p>
-                    <Link to="/faq" className="btn btn-secondary btn-small">
-                        More questions will be answered in the FAQ section →
-                    </Link>
-                </div>
-                {/* ------------------------------------------- */}
-
-                <div className="home-cta">
-                    <Link to="/getstarted" className="btn btn-primary">
-                        Get Started →
-                    </Link>
-                    <Link to="/about" className="btn btn-secondary">
-                        Learn More
-                    </Link>
-                    <Link to="/faq" className="btn btn-secondary">
-                        FAQ
-                    </Link>
                 </div>
 
-                <div className="home-features">
-                    <FeatureCard
-                        icon="⚡"
-                        title="Lightning Fast"
-                        description="Built on Bun for incredible speed. Instant dev server startup and blazing fast HMR."
-                    />
-                    <FeatureCard
-                        icon="📁"
-                        title="File-Based Routing"
-                        description="Create pages/about.jsx and get /about route. Dynamic routes with [param] syntax."
-                    />
-                    <FeatureCard
-                        icon="🎨"
-                        title="Zero Config"
-                        description="No webpack, no babel, no config files. Just write React and ship."
-                    />
-                    <FeatureCard
-                        icon="🔥"
-                        title="Hot Module Replacement"
-                        description="See your changes instantly without losing component state."
-                    />
-                </div>
-
-                {/* --- Image Integration for Proof of Speed --- */}
+                {/* --- Speed Metrics Section with ALL 7 Images --- */}
                 <div className="home-proof-of-speed">
                     <h2 className="proof-title">Unprecedented Speed. Zero Hype.</h2>
                     <p className="proof-subtitle">
@@ -92,38 +60,124 @@ export default function Home() {
                         What other library can surpass a **265ms** production build for a multi-page app?
                     </p>
                     
-                    <div className="speed-metrics-grid">
-                        <MetricDisplay 
-                            title="Initial Build Time" 
-                            time="2 Seconds" 
-                            description="The first full-run build is fast." 
-                            imageSource="../images/build.png"
-                        />
-                        <MetricDisplay 
-                            title="Optimized Build Time" 
-                            time="265ms" 
-                            description="Subsequent production builds are nearly instantaneous." 
-                            imageSource="../images/build7.png" 
-                        />
+                    {/* First Row: Build Speed Comparison */}
+                    <div className="speed-comparison">
+                        <div className="comparison-item">
+                            <h3>Vite/Next.js Build</h3>
+                            <p className="comparison-time">2-5 seconds</p>
+                            <img 
+                                src="/images/build6 .png" 
+                                alt="Traditional build times showing 2-5 seconds" 
+                                className="speed-image large"
+                            />
+                            <p className="comparison-desc">Typical React framework build time</p>
+                        </div>
+                        
+                        <div className="comparison-vs">VS</div>
+                        
+                        <div className="comparison-item bertui-highlight">
+                            <h3>BertUI Build</h3>
+                            <p className="comparison-time">265ms</p>
+                            <img 
+                                src="/images/build7.png" 
+                                alt="BertUI build showing 265ms" 
+                                className="speed-image large"
+                            />
+                            <p className="comparison-desc">BertUI's optimized production build</p>
+                        </div>
+                    </div>
+                    
+                    {/* All 6 Build Images Gallery */}
+                    <div className="build-gallery">
+                        <h3>Complete Build Timeline (All 6 Images)</h3>
+                        <div className="gallery-grid">
+                            <GalleryImage 
+                                src="/images/build.png"
+                                title="Initial Compilation"
+                                desc="38ms for 20 files"
+                            />
+                            <GalleryImage 
+                                src="/images/build2.png"
+                                title="Route Discovery"
+                                desc="11 routes mapped instantly"
+                            />
+                            <GalleryImage 
+                                src="/images/build3.png"
+                                title="CSS Optimization"
+                                desc="LightningCSS processing"
+                            />
+                            <GalleryImage 
+                                src="/images/build4.png"
+                                title="Asset Pipeline"
+                                desc="Image copying & optimization"
+                            />
+                            <GalleryImage 
+                                src="/images/build5.png"
+                                title="JavaScript Bundling"
+                                desc="Bun.build with tree-shaking"
+                            />
+                            <GalleryImage 
+                                src="/images/build7.png"
+                                title="Final Build Complete"
+                                desc="265ms total build time"
+                            />
+                        </div>
+                    </div>
+                    
+                    {/* Missing Image 6 Note */}
+                    <div className="missing-image-note">
+                        <p><strong>Note:</strong> Image 6 (build6 .png) is shown above in the comparison. The space in the filename is intentional.</p>
                     </div>
                     
                     <div className="speed-challenge-callout">
                         <p>
-                            We challenge any modern JS framework to beat a **sustained 265ms build** time!
+                            We challenge any modern JS framework to beat a <strong>sustained 265ms build</strong> time!
                         </p>
                     </div>
                 </div>
-                {/* ------------------------------------------- */}
 
+                {/* --- Features Grid --- */}
+                <div className="home-features">
+                    <FeatureCard
+                        icon="⚡"
+                        title="38ms Compilation"
+                        description="Compiles 20 React files in 38ms - faster than most linters"
+                    />
+                    <FeatureCard
+                        icon="📁"
+                        title="Zero Config Routing"
+                        description="Create pages/about.jsx and get /about route. No config needed."
+                    />
+                    <FeatureCard
+                        icon="🔧"
+                        title="Production Ready"
+                        description="v1.0.0 is stable after 35 beta versions. Ready for production."
+                    />
+                    <FeatureCard
+                        icon="🚀"
+                        title="100ms Dev Server"
+                        description="Dev server starts before you lift your finger off Enter"
+                    />
+                </div>
+
+                {/* --- Get Started Section --- */}
                 <div className="home-start">
                     <h2 className="home-start-title">Ready to build something amazing?</h2>
                     <p className="home-start-subtitle">Get started in seconds with a single command</p>
                     <code className="home-start-code">bunx create-bertui my-app</code>
+                    <div className="home-cta-secondary">
+                        <Link to="/getstarted" className="btn btn-primary btn-large">
+                            View Complete Guide →
+                        </Link>
+                    </div>
                 </div>
             </main>
 
             <footer className="home-footer">
-                <p>Built with ⚡ BertUI • MIT License</p>
+                <p>Built with ⚡ BertUI v1.0.0 • MIT License • Production Ready</p>
+                <p className="footer-note">
+                    35 beta versions (v0.1.0-v0.4.6) led to this stable foundation
+                </p>
             </footer>
         </div>
     );
@@ -139,14 +193,19 @@ function FeatureCard({ icon, title, description }) {
     );
 }
 
-// New Helper Component for Speed Metrics
-function MetricDisplay({ title, time, description, imageSource }) {
+function GalleryImage({ src, title, desc }) {
     return (
-        <div className="metric-card">
-            <h4 className="metric-title">{title}</h4>
-            <div className="metric-time">{time}</div>
-            <p className="metric-desc">{description}</p>
-            <img src={imageSource} alt={`Terminal screenshot showing ${title} of ${time}`} className="metric-image" loading="lazy" />
+        <div className="gallery-item">
+            <img 
+                src={src} 
+                alt={title} 
+                className="gallery-image"
+                loading="lazy"
+            />
+            <div className="gallery-caption">
+                <h4>{title}</h4>
+                <p>{desc}</p>
+            </div>
         </div>
     );
 }

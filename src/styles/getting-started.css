@@ -516,3 +516,159 @@ code{
     page-break-inside: avoid;
   }
 }
+
+/* ===== V1.0.0 STYLES ===== */
+.gs-version-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.gs-stability-notice {
+  background: linear-gradient(135deg, #dbeafe 0%, #eff6ff 100%);
+  border-left: 4px solid #3b82f6;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.gs-stability-icon {
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.gs-stability-text {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* ===== IMPORTANT IMAGE NOTE STYLES ===== */
+.gs-important-note {
+  background: linear-gradient(135deg, #fef3c7 0%, #fffbeb 100%);
+  border: 2px solid #f59e0b;
+  border-left: 6px solid #d97706;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin: 2rem 0;
+}
+
+.gs-important-title {
+  color: #92400e;
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.gs-important-title::before {
+  content: "⚠️";
+  font-size: 1.2rem;
+}
+
+.gs-image-rules {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.gs-rule {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+.gs-rule-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #10b98120;
+  color: #10b981;
+}
+
+.gs-rule-warning .gs-rule-icon {
+  background: #ef444420;
+  color: #ef4444;
+}
+
+.gs-rule code {
+  background: #f3f4f6;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-family: 'Monaco', 'Menlo', monospace;
+  font-size: 0.9rem;
+  color: #1f2937;
+}
+
+.gs-rule-desc {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+.gs-example-box {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.gs-example-box p {
+  margin-top: 0;
+  font-weight: 600;
+  color: #374151;
+}
+
+.gs-no-highlight {
+  background: #f9fafb !important;
+  border: 1px solid #e5e7eb !important;
+}
+
+.gs-note-text {
+  font-size: 0.9rem;
+  color: #6b7280;
+  line-height: 1.6;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.gs-version-history-note {
+  background: #f8fafc;
+  border-left: 4px solid #94a3b8;
+  padding: 1rem;
+  border-radius: 6px;
+  margin: 1.5rem 0;
+  font-size: 0.95rem;
+  color: #475569;
+}
+
+.gs-version-history-note p {
+  margin: 0;
+}
+
+.gs-footer p {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
