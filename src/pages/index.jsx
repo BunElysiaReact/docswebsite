@@ -5,7 +5,7 @@ export default function Home() {
     return (
         <div className="home-container">
             <nav className="home-nav">
-                <h2 className="home-logo">⚡ BertUI v1.0.0</h2>
+                <h2 className="home-logo">⚡ BertUI v1.0.3</h2>
                 <div className="home-nav-links">
                     <Link to="/" className="nav-link active">Home</Link>
                     <Link to="/about" className="nav-link">About</Link>
