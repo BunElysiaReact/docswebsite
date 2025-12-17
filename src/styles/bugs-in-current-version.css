@@ -1,0 +1,143 @@
+/* --- Bug Report Page Container --- */
+.bug-report-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+/* --- Header and Intro --- */
+.bug-header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    border: 1px solid #e9ecef;
+}
+
+.bug-title {
+    font-size: 2.5em;
+    color: #dc3545; /* Primary Bug/Danger color */
+    margin-bottom: 0.5rem;
+}
+
+.bug-intro, .bug-note {
+    font-size: 1.1em;
+    color: #6c757d;
+    line-height: 1.6;
+}
+
+.bug-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.bug-link:hover {
+    text-decoration: underline;
+}
+
+/* --- Bug List Section --- */
+.bug-list-section {
+    padding: 30px 0;
+}
+
+.bug-list-heading {
+    font-size: 1.8em;
+    color: #343a40;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.bug-list {
+    list-style: none;
+    padding: 0;
+}
+
+.bug-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    background-color: white;
+}
+
+/* Highlight Critical Bug */
+.bug-item.bug-critical {
+    border-left: 5px solid #dc3545; /* Red for critical */
+}
+/* Style for lower priority bugs */
+.bug-item.bug-medium {
+    border-left: 5px solid #ffc107; /* Yellow for medium */
+}
+.bug-item.bug-low {
+    border-left: 5px solid #007bff; /* Blue for quality of life */
+}
+
+.bug-icon {
+    font-size: 2em;
+    flex-shrink: 0;
+    padding-top: 5px;
+}
+.bug-item.bug-critical .bug-icon { color: #dc3545; }
+.bug-item.bug-medium .bug-icon { color: #ffc107; }
+.bug-item.bug-low .bug-icon { color: #007bff; }
+
+
+.bug-details {
+    flex-grow: 1;
+}
+
+.bug-name {
+    font-size: 1.3em;
+    color: #343a40;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.bug-description, .bug-workaround {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #495057;
+    margin-bottom: 10px;
+}
+
+.bug-workaround {
+    background-color: #e9ecef;
+    padding: 8px 12px;
+    border-radius: 5px;
+    border-left: 3px solid #6c757d;
+    font-size: 0.9em;
+}
+
+.bug-fix-target {
+    display: block;
+    background-color: #f1f1f1;
+    color: #c0392b; /* A distinct color for code/fix target */
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .bug-report-container {
+        padding: 10px;
+    }
+    .bug-item {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+    .bug-icon {
+        margin-bottom: 10px;
+    }
+}

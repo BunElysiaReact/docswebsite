@@ -1,0 +1,86 @@
+/* --- Global Container and Typography --- */
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333; /* Default dark text */
+    line-height: 1.7;
+}
+
+.about-title {
+    font-size: 2.5em;
+    color: #007bff; /* Primary brand blue for titles */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.about-subtitle {
+    font-size: 1.2em;
+    color: #555;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+
+/* --- Section Styling --- */
+h3 {
+    font-size: 1.5em;
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 1.2em;
+    text-align: justify;
+}
+
+/* --- Key Content Highlighting --- */
+/* Highlighting the B.E.R.T.U.I abbreviation */
+.about-container div:first-of-type {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #007bff;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Emphasizing metrics or key technologies */
+p strong {
+    color: #007bff; 
+    font-weight: 700;
+}
+
+/* Styling for the contact information */
+.about-contact {
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+/* --- Call to Action (CTA) Button --- */
+.about-cta {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.btn-back {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.btn-back:hover {
+    background-color: #0056b3;
+    transform: translateY(-1px);
+}

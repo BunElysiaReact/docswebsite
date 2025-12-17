@@ -1,0 +1,131 @@
+/* --- Global Containers and Typography --- */
+.changelog-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+.changelog-page header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.changelog-page h1 {
+    font-size: 2.8em;
+    color: #007bff; /* Primary brand color */
+    margin-bottom: 10px;
+}
+
+/* --- Individual Release Entry Styling --- */
+.changelog-entry {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    /* subtle border to separate history */
+    border-left: 3px solid #eee; 
+    padding-left: 20px;
+}
+
+.changelog-entry h2 {
+    font-size: 1.8em;
+    color: #222;
+    /* Use a marker on the timeline */
+    position: relative;
+    left: -33px; 
+    margin-bottom: 15px;
+    background-color: white; /* Hide the line passing through the title */
+    display: inline-block;
+    padding-right: 10px;
+}
+
+/* Highlight the latest version */
+.changelog-entry.latest h2 {
+    color: #28a745; /* Success/Latest color */
+    font-weight: bold;
+}
+
+/* Timeline dot */
+.changelog-entry h2::before {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: #007bff;
+    border-radius: 50%;
+    position: absolute;
+    left: -35px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.changelog-entry.latest h2::before {
+    background: #28a745;
+    border: 3px solid #eee;
+}
+
+/* --- Feature/Fix Section Headings --- */
+.changelog-entry h3 {
+    font-size: 1.2em;
+    color: #444;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+/* Icon specific styling */
+.changelog-entry h3::before {
+    margin-right: 8px;
+    font-size: 1.1em;
+}
+
+/* Specific color for feature icons */
+.changelog-entry .features h3 {
+    color: #007bff; 
+}
+/* Specific color for bug fix icons */
+.changelog-entry .fixes h3 {
+    color: #dc3545; /* Red for fixes */
+}
+
+/* --- List Styling --- */
+.changelog-entry ul {
+    list-style-type: none; /* Remove default bullet */
+    padding-left: 0;
+}
+
+.changelog-entry li {
+    padding-left: 20px;
+    position: relative;
+    line-height: 1.5;
+    margin-bottom: 5px;
+}
+
+/* Custom bullet point */
+.changelog-entry li::before {
+    content: '•';
+    color: #007bff;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Notes and Setup paragraphs */
+.changelog-entry p {
+    margin-bottom: 1em;
+}
+
+code {
+    background-color: #eee;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 0.9em;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 30px 0;
+}

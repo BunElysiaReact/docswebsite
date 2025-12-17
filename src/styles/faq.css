@@ -1,0 +1,74 @@
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #333; /* Darker text for titles */
+}
+
+/* --- FAQ List and Items --- */
+.faq-list {
+    /* Resets the default margin of the <dl> element */
+    margin: 0; 
+    padding: 0;
+}
+
+.faq-item {
+    /* Visually separates each Q&A pair */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    overflow: hidden; /* Important for clean borders */
+    transition: box-shadow 0.3s ease;
+}
+
+.faq-item:hover {
+    /* Subtle lift effect on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* --- Question (dt) Styling --- */
+.faq-question {
+    /* The question is the main clickable/visible element */
+    display: block;
+    background-color: #f9f9f9; /* Light background */
+    padding: 18px 25px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer; /* Suggests interactivity */
+    margin: 0;
+    /* Optional: Add a simple '+' icon with a pseudo-element */
+}
+
+/* --- Answer (dd) Styling --- */
+.faq-answer {
+    /* The answer is the content that expands/collapses */
+    padding: 20px 25px;
+    background-color: #fff;
+    color: #555;
+    line-height: 1.6;
+    border-top: 1px solid #eee;
+    margin-left: 0; /* Remove default <dd> indentation */
+}
+
+/* Style for lists and headings *within* the answer to ensure good formatting */
+.faq-answer p, 
+.faq-answer ul, 
+.faq-answer h3,
+.faq-answer h5 {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.faq-answer ul {
+    margin-left: 20px;
+}
+
+/* Optional: B.E.R.T. Stack highlighting */
+.faq-answer strong {
+    color: #007bff; /* Primary brand color highlight */
+}
