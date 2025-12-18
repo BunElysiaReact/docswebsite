@@ -23,7 +23,17 @@
   font-weight: bold;
   transition: opacity 0.3s;
 }
+/* --- Add this to your existing Getting Started Page Styles CSS file --- */
 
+/* Style for images inside the deployment workflow steps */
+.gs-step-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 15px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
 .gs-logo:hover {
   opacity: 0.8;
 }
@@ -655,13 +665,13 @@ code{
 }
 
 .gs-version-history-note {
-  background: #f8fafc;
+  background: #050505;
   border-left: 4px solid #94a3b8;
   padding: 1rem;
   border-radius: 6px;
   margin: 1.5rem 0;
   font-size: 0.95rem;
-  color: #475569;
+  color: #f70505;
 }
 
 .gs-version-history-note p {
@@ -669,6 +679,6 @@ code{
 }
 
 .gs-footer p {
-  color: #6b7280;
+  color: #d4abab;
   font-size: 0.9rem;
 }

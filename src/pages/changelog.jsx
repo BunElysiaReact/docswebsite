@@ -1,5 +1,5 @@
 import "../styles/changelog.css"
-
+import {Link} from "bertui/router"
 export default function Changelog() {
     return (
         <section className="changelog-page">
@@ -15,7 +15,7 @@ export default function Changelog() {
             <div className="changelog-entry major-release">
                 <div className="version-badge">v1.0.0</div>
                 <h2>BertUI 1.0: The Stable Foundation</h2>
-                <p className="release-subtitle"><strong>Released:</strong> [Today's Date] | <strong>Status:</strong> 🟢 Production Ready</p>
+                <p className="release-subtitle"><strong>Released:</strong> 17/12/2025 | <strong>Status:</strong> 🟢 Production Ready</p>
 
                 <div className="announcement">
                     <h3>🏁 The Beta Journey is Complete</h3>
@@ -193,6 +193,19 @@ export default function Changelog() {
                     </ul>
                 </div>
             </div>
+            <div className="gs-cta-grid">
+                        <Link to="/" className="gs-cta-button gs-primary">
+                          ← Back to Home
+                        </Link>
+                        <a 
+                          href="https://github.com/BunElysiaReact/BERTUI" 
+                          target="_blank" 
+                          rel="noopener noreferrer" 
+                          className="gs-cta-button gs-secondary"
+                        >
+                          View on GitHub →
+                        </a>
+                      </div>
             </div>
         </section>
     );
