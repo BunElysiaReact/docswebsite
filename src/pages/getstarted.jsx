@@ -46,7 +46,7 @@ export default function GettingStarted() {
             If you don't have it, install it from <a href="https://bun.sh" target="_blank" rel="noopener noreferrer" className="gs-link">bun.sh</a>.
           </p>
           
-          <CodeBlock>
+<CodeBlock>
 {`# Create a new BertUI app
 bunx create-bertui my-app
 
@@ -56,10 +56,27 @@ cd my-app
 # Start the dev server
 bun run dev`}
           </CodeBlock>
-
+          
           <p className="gs-text">
             That's it! Your app is now running at <code className="gs-inline-code">http://localhost:3000</code> 🎉
           </p>
+
+          <div className="gs-video-container">
+            <h4 className="gs-video-title">📹 Installation Tutorial Video</h4>
+            <p className="gs-text">Watch our step-by-step installation guide:</p>
+            <div className="gs-video-wrapper">
+              <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/uE8_bwUF358?si=gHOdIo4pe0VsTQL2" 
+                title="BertUI Installation Tutorial" 
+                frameBorder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerPolicy="strict-origin-when-cross-origin" 
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
 
           <div className="gs-callout">
             <strong>⚡ Lightning Fast:</strong> Dev server starts in under 100ms, compilation in ~38ms!

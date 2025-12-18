@@ -663,7 +663,54 @@ code{
   padding-top: 1rem;
   border-top: 1px solid #e5e7eb;
 }
+/* Callout Boxes */
+.gs-callout {
+  background: linear-gradient(135deg, #dbeafe 0%, #eff6ff 100%);
+  border-left: 4px solid #3b82f6;
+  padding: 1.25rem;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+}
 
+.gs-callout strong {
+  color: #1e40af;
+}
+
+/* Video Container Styles */
+.gs-video-container {
+  background: #f9fafb;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+}
+
+.gs-video-title {
+  color: #667eea;
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+  margin-top: 0;
+}
+
+.gs-video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
+}
+
+.gs-video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 8px;
+}
 .gs-version-history-note {
   background: #050505;
   border-left: 4px solid #94a3b8;

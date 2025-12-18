@@ -75,7 +75,7 @@ export default function Home() {
                 {/* Hero Section with enhanced animations */}
                 <div className="home-hero">
                     <div className="hero-badge">
-                        <span className="badge-dot"></span>
+                        <img src="../images/logo.png" alt="BertUI Logo" className="badge-logo" />
                         <span>v1.0.0 STABLE - Production Ready</span>
                     </div>
 
