@@ -34,9 +34,9 @@ export default function Home() {
             description: "Create pages/about.jsx and get /about route. No config needed."
         },
         {
-            icon: "🔧",
-            title: "Production Ready",
-            description: "v1.0.0 is stable after 35 beta versions. Ready for production."
+            icon: "🏝️",
+            title: "Server Islands",
+            description: "Optional SSG with one line. Perfect SEO without complexity."
         },
         {
             icon: "🚀",
@@ -58,7 +58,7 @@ export default function Home() {
         <div className="home-container">
             {/* Enhanced Navigation with glassmorphism effect */}
             <nav className="home-nav">
-                <h2 className="home-logo">⚡ BertUI v1.0.3</h2>
+                <h2 className="home-logo">⚡ BertUI v1.1.0</h2>
                 <div className="home-nav-links">
                     <Link to="/" className="nav-link active">Home</Link>
                     <Link to="/about" className="nav-link">About</Link>
@@ -74,32 +74,37 @@ export default function Home() {
             <main className="home-main">
                 {/* Hero Section with enhanced animations */}
                 <div className="home-hero">
-                    <div className="hero-badge">
+                    <div className="hero-badge hero-badge-new">
                         <img src="../images/logo.png" alt="BertUI Logo" className="badge-logo" />
-                        <span>v1.0.0 STABLE - Production Ready</span>
+                        <span>🏝️ v1.1.0 - SERVER ISLANDS ERA</span>
                     </div>
 
                     <h1 className="home-title hero-title-enhanced">
                         Build Lightning-Fast
                         <br />
                         <span className="title-gradient">React Apps</span>
+                        <br />
+                        <span className="title-feature">with Perfect SEO</span>
                     </h1>
 
                     <p className="home-subtitle hero-subtitle-enhanced">
-                        File-based routing • Zero config • 38ms compilation • Powered by Bun
+                        File-based routing • Zero config • 38ms compilation • Server Islands
                         <br />
-                        <strong>The fastest React framework. Period.</strong>
+                        <strong>The fastest React framework with optional SSG. Period.</strong>
                     </p>
 
-                    <div className="version-badge-hero">v1.0.0 STABLE</div>
+                    <div className="version-badge-hero version-badge-island">
+                        <span className="badge-icon">🏝️</span>
+                        <span>v1.1.0 STABLE</span>
+                    </div>
 
                     <div className="home-cta">
                         <Link to="/getstarted" className="btn btn-primary btn-enhanced">
                             <span>Get Started</span>
                             <span className="btn-arrow">→</span>
                         </Link>
-                        <Link to="/about" className="btn btn-secondary btn-enhanced">
-                            <span>Learn More</span>
+                        <Link to="/server-islands" className="btn btn-island btn-enhanced">
+                            <span>🏝️ Server Islands</span>
                             <span className="btn-arrow">↗</span>
                         </Link>
                     </div>
@@ -111,6 +116,44 @@ export default function Home() {
                         <div className="quick-start-hint">← Copy and run this command</div>
                     </div>
                 </div>
+
+                {/* NEW: Server Islands Announcement */}
+                <section className="server-islands-announcement">
+                    <div className="announcement-badge">🎉 NEW IN v1.1.0</div>
+                    <div className="announcement-content">
+                        <div className="announcement-icon">🏝️</div>
+                        <div className="announcement-text">
+                            <h2>Introducing Server Islands</h2>
+                            <p className="announcement-subtitle">
+                                The game-changing feature that gives you <strong>instant SEO</strong> and 
+                                <strong> perfect performance</strong> without sacrificing React's developer experience.
+                            </p>
+                            <div className="announcement-features">
+                                <div className="announcement-feature">
+                                    <span className="feature-check">✅</span>
+                                    <span>Add one line: <code>export const render = "server";</code></span>
+                                </div>
+                                <div className="announcement-feature">
+                                    <span className="feature-check">✅</span>
+                                    <span>Static HTML generated at build time</span>
+                                </div>
+                                <div className="announcement-feature">
+                                    <span className="feature-check">✅</span>
+                                    <span>Perfect for landing pages, blogs, docs</span>
+                                </div>
+                                <div className="announcement-feature">
+                                    <span className="feature-check">✅</span>
+                                    <span>Mix with client-only pages freely</span>
+                                </div>
+                            </div>
+                            <div className="announcement-cta">
+                                <Link to="/server-islands" className="btn btn-announcement">
+                                    Learn About Server Islands →
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
                 {/* Animated Metrics Section */}
                 <section className="metrics-showcase">
@@ -184,39 +227,64 @@ export default function Home() {
                     </div>
                 </section>
                 
-                {/* --- NEW IMPORTANT NEWS SECTION --- */}
+                {/* Updated News Section with Server Islands */}
                 <section className="important-news-section">
                     <div className="section-header">
-                        <h2 className="section-title title-gradient">New in v1.0.3: Build Optimization & SEO</h2>
-                        <p className="section-subtitle">A huge step for performance and searchability.</p>
+                        <h2 className="section-title title-gradient">What's New in v1.1.0</h2>
+                        <p className="section-subtitle">Revolutionary features that change everything</p>
                     </div>
                     
-                    <div className="news-grid">
+                    <div className="news-grid news-grid-three">
+                        <div className="news-card news-card-island news-card-featured">
+                            <div className="news-badge">🎉 GAME CHANGER</div>
+                            <div className="news-icon">🏝️</div>
+                            <h3 className="news-title">Server Islands</h3>
+                            <p className="news-text">
+                                BertUI's <strong>revolutionary feature</strong> that gives you instant SEO and perfect performance 
+                                with just one line of code. Add <code>export const render = "server";</code> to any page 
+                                and get static HTML at build time.
+                            </p>
+                            <div className="news-highlight">
+                                <p><strong>Why it's special:</strong></p>
+                                <ul>
+                                    <li>✅ Not "Fast Vite" - Vite has no SSG at all</li>
+                                    <li>✅ Not "Simple Next.js" - No complex setup</li>
+                                    <li>✅ Unique: Optional SSG per page</li>
+                                    <li>✅ Zero configuration required</li>
+                                </ul>
+                            </div>
+                            <Link to="/server-islands" className="news-link-button">
+                                Read Complete Guide →
+                            </Link>
+                        </div>
+
                         <div className="news-card news-card-css">
                             <div className="news-icon">💅</div>
-                            <h3 className="news-title">CSS Consolidation & Minification</h3>
+                            <h3 className="news-title">CSS Consolidation</h3>
                             <p className="news-text">
-                                In v1.0.3, all your component CSS is automatically compiled into a **single, minified CSS file** (using LightningCSS). This eliminates repetitive network requests and ensures the smallest possible payload.
+                                All your CSS automatically compiles into a <strong>single, minified file</strong> using 
+                                LightningCSS. Zero network overhead, maximum performance.
                             </p>
                             <div className="news-note">
-                                <p><strong>Developer Note:</strong> This pipeline is extremely fast. Feel free to organize your code into as many CSS files as you need (e.g., 50 files)—BertUI handles the optimization instantly. **Just ensure you don't rely on repeated class names for overriding styles** across separate files, as the order of minification is optimized for speed.</p>
+                                <p><strong>Pro tip:</strong> Organize into 50+ CSS files if you want—BertUI optimizes 
+                                instantly.</p>
                             </div>
                         </div>
 
                         <div className="news-card news-card-seo">
                             <div className="news-icon">🔎</div>
-                            <h3 className="news-title">Static HTML Output for SEO</h3>
+                            <h3 className="news-title">Enhanced SEO</h3>
                             <p className="news-text">
-                                The build process now creates **dedicated <code>.html</code> files for every route** (e.g., <code>/about.html</code>), even though the client-side routing still mounts onto the <code>#root</code> div.
+                                Dedicated <code>.html</code> files for every route, with full meta tag support. 
+                                Perfect for search engines, even better with Server Islands.
                             </p>
                             <div className="news-note">
-                                <p>This is a major step forward for **Search Engine Optimization (SEO)**! To take full advantage, remember to export specific <code>meta</code> tags from your page components. This was covered in the <Link to="/getstarted" className="news-link">Get Started</Link> section.</p>
+                                <p>Export <code>meta</code> from your components for custom SEO. See the 
+                                <Link to="/getstarted" className="news-link"> Get Started</Link> guide.</p>
                             </div>
                         </div>
                     </div>
                 </section>
-                {/* --- END NEW SECTION --- */}
-
 
                 {/* Features Grid - Enhanced */}
                 <section className="features-section">
@@ -237,17 +305,83 @@ export default function Home() {
                     </div>
                 </section>
 
+                {/* Server Islands Example */}
+                <section className="server-islands-example">
+                    <div className="section-header">
+                        <h2 className="section-title">See Server Islands in Action</h2>
+                        <p className="section-subtitle">One line. Perfect SEO. Zero complexity.</p>
+                    </div>
+
+                    <div className="example-container">
+                        <div className="example-code">
+                            <div className="code-header">
+                                <span className="code-filename">📄 src/pages/about.jsx</span>
+                                <span className="code-badge">Server Island ✅</span>
+                            </div>
+                            <pre className="code-content">{`// Just add this one line
+export const render server;
+
+export const meta = {
+  title: "About Us",
+  description: "Learn about our company"
+};
+
+export default function About() {
+  return (
+    <div>
+      <h1>About Us</h1>
+      <p>Pre-rendered as static HTML!</p>
+    </div>
+  );
+}`}</pre>
+                        </div>
+
+                        <div className="example-results">
+                            <div className="result-item result-success">
+                                <div className="result-icon">✅</div>
+                                <div className="result-text">
+                                    <h4>Build Output</h4>
+                                    <p>Static HTML generated at build time</p>
+                                </div>
+                            </div>
+                            <div className="result-item result-success">
+                                <div className="result-icon">🔍</div>
+                                <div className="result-text">
+                                    <h4>Search Engines</h4>
+                                    <p>See all content immediately</p>
+                                </div>
+                            </div>
+                            <div className="result-item result-success">
+                                <div className="result-icon">⚡</div>
+                                <div className="result-text">
+                                    <h4>Performance</h4>
+                                    <p>0ms Time to First Byte</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="example-cta">
+                        <Link to="/server-islands" className="btn btn-primary btn-large">
+                            Read the Complete Server Islands Guide →
+                        </Link>
+                    </div>
+                </section>
+
                 {/* TypeScript Note - Enhanced */}
                 <section className="ts-note-section">
                     <div className="home-ts-note">
-                        <div className="ts-note-icon">⚠️</div>
+                        <div className="ts-note-icon">📝</div>
                         <div className="ts-note-content">
-                            <h3 className="ts-note-title">Current State: JavaScript Focus (v1.0.0)</h3>
+                            <h3 className="ts-note-title">JavaScript-First Philosophy</h3>
                             <p className="ts-note-text">
-                                BertUI v1.0.0 is primarily focused on <strong>JavaScript/JSX</strong> files (<code>.js</code>, <code>.jsx</code>). While you can use TypeScript files (<code>.ts</code>, <code>.tsx</code>), please be aware that <strong>IntelliSense and official <code>@types/bertui</code> support are not yet stable</strong>.
+                                BertUI is <strong>JavaScript-first</strong> and will remain that way. We fully support 
+                                <code>.jsx</code> files with complete JSX syntax, but we don't plan to add TypeScript 
+                                (<code>.tsx</code>) support.
                             </p>
                             <p className="ts-note-recommendation">
-                                For the best development experience, we recommend using <code>.js</code> and <code>.jsx</code> file extensions for now.
+                                We believe in keeping tools simple. TypeScript adds complexity that goes against 
+                                BertUI's core philosophy of "zero config, just code."
                             </p>
                         </div>
                     </div>
@@ -257,7 +391,7 @@ export default function Home() {
                 <section className="home-start cta-final">
                     <div className="cta-glow"></div>
                     <h2 className="home-start-title">Ready to build something amazing?</h2>
-                    <p className="home-start-subtitle">Join developers building the fastest React apps on the planet</p>
+                    <p className="home-start-subtitle">Join developers building the fastest React apps with perfect SEO</p>
                     <div className="cta-stats">
                         <div className="cta-stat">
                             <div className="cta-stat-value">38ms</div>
@@ -268,8 +402,8 @@ export default function Home() {
                             <div className="cta-stat-label">Build Time</div>
                         </div>
                         <div className="cta-stat">
-                            <div className="cta-stat-value">0</div>
-                            <div className="cta-stat-label">Config Files</div>
+                            <div className="cta-stat-value">🏝️</div>
+                            <div className="cta-stat-label">Server Islands</div>
                         </div>
                     </div>
                     <div className="home-cta-secondary">
@@ -285,17 +419,18 @@ export default function Home() {
             <footer className="home-footer">
                 <div className="footer-content">
                     <div className="footer-main">
-                        <p>Built with ⚡ BertUI v1.0.3 • MIT License • Production Ready</p>
+                        <p>Built with ⚡ BertUI v1.1.0 🏝️ • MIT License • Production Ready</p>
                     </div>
                     <div className="footer-links">
                         <Link to="https://github.com/BunElysiaReact/BERTUI" target="_blank" rel="noopener noreferrer">GitHub</Link>
                         <Link to="https://discord.gg/kvbXfkJG" target="_blank" rel="noopener noreferrer">Discord</Link>
                         <Link to="/changelog">Changelog</Link>
+                        <Link to="/server-islands">Server Islands</Link>
                         <Link to="/faq">FAQ</Link>
                     </div>
                 </div>
                 <p className="footer-note">
-                    35 beta versions (v0.1.0-v0.4.6) led to this stable foundation
+                    v1.1.0: The Server Islands era begins 🏝️
                 </p>
             </footer>
         </div>

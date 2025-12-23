@@ -84,3 +84,323 @@ p strong {
     background-color: #0056b3;
     transform: translateY(-1px);
 }
+/* ============================================
+   Enhanced About Page CSS - The Honest Story
+   Add this to your about.css file
+   ============================================ */
+
+.about-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: #1a202c;
+  line-height: 1.8;
+}
+
+.about-title {
+  font-size: 3em;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 10px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.about-subtitle {
+  font-size: 1.3em;
+  text-align: center;
+  color: #4a5568;
+  margin-bottom: 60px;
+  font-weight: 500;
+}
+
+.about-section {
+  margin-bottom: 60px;
+  padding: 30px;
+  background: #f7fafc;
+  border-radius: 12px;
+  border-left: 5px solid #4299e1;
+}
+
+.about-section h3 {
+  font-size: 2em;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #2d3748;
+}
+
+.about-section p {
+  margin-bottom: 20px;
+}
+
+.about-section ul {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+.about-section li {
+  margin: 10px 0;
+}
+
+/* Frustration Section */
+.about-frustration {
+  background: #fff5f5;
+  border-left-color: #f56565;
+}
+
+.about-quote {
+  font-size: 1.8em;
+  font-style: italic;
+  text-align: center;
+  margin: 30px 0;
+  padding: 30px;
+  background: white;
+  border-left: 5px solid #f56565;
+  color: #c53030;
+  font-weight: 600;
+}
+
+.about-problems {
+  list-style: none;
+  padding: 0;
+}
+
+.about-problems li {
+  padding: 12px 20px;
+  background: white;
+  margin: 10px 0;
+  border-radius: 8px;
+  border-left: 4px solid #f56565;
+}
+
+/* Breakthrough Section */
+.about-breakthrough {
+  background: #fffaf0;
+  border-left-color: #ed8936;
+}
+
+.about-eureka {
+  font-size: 1.5em;
+  font-weight: 700;
+  text-align: center;
+  margin: 30px 0;
+  padding: 25px;
+  background: white;
+  border-radius: 12px;
+  color: #667eea;
+  border: 3px solid #667eea;
+}
+
+/* Solution Section */
+.about-solution {
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  border-left-color: #667eea;
+  border-left-width: 6px;
+}
+
+.about-code-example {
+  margin: 30px 0;
+  background: #1a202c;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.about-code-example code {
+  color: #48bb78;
+  font-family: 'Monaco', 'Courier New', monospace;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.about-comparison {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.comparison-before,
+.comparison-after {
+  padding: 25px;
+  border-radius: 12px;
+  background: white;
+}
+
+.comparison-before {
+  border: 2px solid #f56565;
+}
+
+.comparison-before h4 {
+  color: #f56565;
+  margin-top: 0;
+}
+
+.comparison-after {
+  border: 3px solid #48bb78;
+}
+
+.comparison-after h4 {
+  color: #48bb78;
+  margin-top: 0;
+}
+
+.comparison-before ul,
+.comparison-after ul {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0 0 0;
+}
+
+.comparison-before li,
+.comparison-after li {
+  padding: 8px 0;
+}
+
+/* Special Section */
+.about-special {
+  background: linear-gradient(135deg, #f0fff4 0%, #c6f6d5 100%);
+  border-left-color: #48bb78;
+  border-left-width: 6px;
+}
+
+.about-benefits {
+  list-style: none;
+  padding: 0;
+}
+
+.about-benefits li {
+  padding: 15px 20px;
+  background: white;
+  margin: 15px 0;
+  border-radius: 8px;
+  border-left: 4px solid #48bb78;
+  font-size: 1.05em;
+}
+
+.about-declaration {
+  font-size: 1.2em;
+  font-weight: 600;
+  text-align: center;
+  margin: 40px 0 0 0;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  line-height: 2;
+  border: 3px solid #48bb78;
+  color: #2d3748;
+}
+
+/* Mission Section */
+.about-mission {
+  background: linear-gradient(135deg, #fef5e7 0%, #fdeaa8 100%);
+  border-left-color: #f59e0b;
+}
+
+.about-challenge {
+  font-size: 1.2em;
+  font-weight: 600;
+  text-align: center;
+  margin: 30px 0 0 0;
+  padding: 25px;
+  background: white;
+  border-radius: 12px;
+  border: 3px solid #f59e0b;
+}
+
+/* Creator Section */
+.about-creator {
+  background: #e6fffa;
+  border-left-color: #38b2ac;
+}
+
+.about-thanks {
+  font-style: italic;
+  font-size: 1.1em;
+  margin-top: 30px;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  border-left: 4px solid #38b2ac;
+}
+
+/* CTA Buttons */
+.about-cta {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 60px;
+  flex-wrap: wrap;
+}
+
+.btn-back {
+  padding: 15px 30px;
+  background: #4a5568;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-back:hover {
+  background: #2d3748;
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  padding: 15px 30px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 2em;
+  }
+  
+  .about-subtitle {
+    font-size: 1.1em;
+  }
+  
+  .about-section {
+    padding: 20px;
+  }
+  
+  .about-quote {
+    font-size: 1.4em;
+    padding: 20px;
+  }
+  
+  .about-eureka {
+    font-size: 1.2em;
+    padding: 20px;
+  }
+  
+  .about-comparison {
+    grid-template-columns: 1fr;
+  }
+  
+  .about-declaration {
+    font-size: 1em;
+    padding: 20px;
+  }
+  
+  .about-cta {
+    flex-direction: column;
+  }
+}

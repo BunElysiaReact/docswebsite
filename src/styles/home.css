@@ -1345,3 +1345,364 @@
     transform: scale(1.1);
   }
 }
+/* ============================================
+   Additional CSS for Server Islands on Home Page
+   Add this to your home.css file
+   ============================================ */
+
+/* Hero Badge Enhancement */
+.hero-badge-new {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.title-feature {
+  font-size: 0.6em;
+  display: block;
+  background: linear-gradient(135deg, #48bb78, #38b2ac);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.version-badge-island {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.badge-icon {
+  font-size: 1.2em;
+}
+
+/* Island Button */
+.btn-island {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+}
+
+.btn-island:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+}
+
+/* Server Islands Announcement Section */
+.server-islands-announcement {
+  margin: 80px 0;
+  padding: 60px 40px;
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  border-radius: 20px;
+  border: 3px solid #667eea;
+  position: relative;
+  overflow: hidden;
+}
+
+.server-islands-announcement::before {
+  content: '🏝️';
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  font-size: 200px;
+  opacity: 0.05;
+  transform: rotate(15deg);
+}
+
+.announcement-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.85em;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.announcement-content {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  position: relative;
+  z-index: 1;
+}
+
+.announcement-icon {
+  font-size: 100px;
+  flex-shrink: 0;
+}
+
+.announcement-text h2 {
+  font-size: 2.5em;
+  margin: 0 0 15px 0;
+  color: #2d3748;
+}
+
+.announcement-subtitle {
+  font-size: 1.2em;
+  color: #4a5568;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.announcement-features {
+  display: grid;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.announcement-feature {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.feature-check {
+  font-size: 1.2em;
+}
+
+.announcement-feature code {
+  background: #f7fafc;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-family: 'Monaco', 'Courier New', monospace;
+  font-size: 0.9em;
+  color: #667eea;
+}
+
+.announcement-cta {
+  margin-top: 30px;
+}
+
+.btn-announcement {
+  display: inline-block;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 15px 35px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1em;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-announcement:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
+/* Updated News Grid */
+.news-grid-three {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.news-card-island {
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  border: 2px solid #667eea;
+}
+
+.news-card-featured {
+  grid-column: span 1;
+  position: relative;
+}
+
+.news-badge {
+  position: absolute;
+  top: -15px;
+  right: 20px;
+  background: linear-gradient(135deg, #48bb78 0%, #38b2ac 100%);
+  color: white;
+  padding: 6px 15px;
+  border-radius: 20px;
+  font-size: 0.75em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 12px rgba(72, 187, 120, 0.3);
+}
+
+.news-highlight {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+  border-left: 4px solid #667eea;
+}
+
+.news-highlight p {
+  margin: 0 0 10px 0;
+  font-weight: 600;
+}
+
+.news-highlight ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+.news-highlight li {
+  padding: 5px 0;
+}
+
+.news-link-button {
+  display: inline-block;
+  margin-top: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.news-link-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.3);
+}
+
+/* Server Islands Example Section */
+.server-islands-example {
+  margin: 80px 0;
+  padding: 60px 40px;
+  background: #f7fafc;
+  border-radius: 20px;
+}
+
+.example-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin: 40px 0;
+}
+
+.example-code {
+  background: #1a202c;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.code-header {
+  background: #2d3748;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9em;
+}
+
+.code-filename {
+  color: #cbd5e0;
+  font-family: 'Monaco', 'Courier New', monospace;
+}
+
+.code-badge {
+  background: #48bb78;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.85em;
+  font-weight: 600;
+}
+
+.code-content {
+  padding: 25px;
+  margin: 0;
+  overflow-x: auto;
+  color: #e2e8f0;
+  font-family: 'Monaco', 'Courier New', monospace;
+  font-size: 0.95em;
+  line-height: 1.6;
+}
+
+.example-results {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+
+.result-item {
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  border-left: 4px solid;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.result-success {
+  border-color: #48bb78;
+}
+
+.result-icon {
+  font-size: 2em;
+  flex-shrink: 0;
+}
+
+.result-text h4 {
+  margin: 0 0 5px 0;
+  color: #2d3748;
+  font-size: 1.1em;
+}
+
+.result-text p {
+  margin: 0;
+  color: #4a5568;
+  font-size: 0.95em;
+}
+
+.example-cta {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .announcement-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .announcement-icon {
+    font-size: 60px;
+  }
+  
+  .example-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .server-islands-announcement {
+    padding: 40px 20px;
+  }
+  
+  .announcement-text h2 {
+    font-size: 1.8em;
+  }
+  
+  .announcement-subtitle {
+    font-size: 1em;
+  }
+  
+  .news-grid-three {
+    grid-template-columns: 1fr;
+  }
+  
+  .server-islands-example {
+    padding: 40px 20px;
+  }
+}
