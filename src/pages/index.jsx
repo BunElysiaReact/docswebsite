@@ -68,6 +68,7 @@ export default function Home() {
                     <Link to="https://discord.gg/kvbXfkJG" target="_blank" rel="noopener noreferrer" className="nav-link">Discord</Link>
                     <Link to="/getstarted" className="nav-link nav-link-cta">Get Started</Link>
                     <Link to="/deployment" className="nav-link nav-link-cta">Deployment</Link>
+                    <Link to="/questions" className="nav-link nav-link-cta">Community Questions</Link>
                 </div>
             </nav>
 
@@ -319,7 +320,7 @@ export default function Home() {
                                 <span className="code-badge">Server Island ✅</span>
                             </div>
                             <pre className="code-content">{`// Just add this one line
-export const render server;
+
 
 export const meta = {
   title: "About Us",
