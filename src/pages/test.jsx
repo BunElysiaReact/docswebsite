@@ -2,11 +2,9 @@
 export const render = "server";
 
 // Empty interface since we don't use props
-interface TestProps {
-  // No props needed for this example
-}
 
-export default function TypeScriptTest(props: TestProps) {
+
+export default function TypeScriptTest() {
   return (
     <div>
       <h1>TypeScript Server Island Test ✅</h1>
