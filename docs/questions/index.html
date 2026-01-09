@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home-look at what bertui can do</title>
+  
+  <meta name="description" content="Bertui fast simle in a new league">
+  <meta name="keywords" content="react, bun, bertui, fast, file-based routing">
+  <meta name="author" content="Pease Ernest">
+  <meta name="theme-color" content="#667eea">
+  
+  <meta property="og:title" content="BertUI - Lightning Fast React Framework">
+  <meta property="og:description" content="Build lightning-fast React apps with zero config">
+  <meta property="og:image" content="/og-image.png">
+  
+  <link rel="stylesheet" href="/styles/bertui.min.css">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  
+  <script type="importmap">
+  {
+    "imports": {
+      "react": "https://esm.sh/react@18.2.0",
+      "react-dom": "https://esm.sh/react-dom@18.2.0",
+      "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+      "react/jsx-runtime": "https://esm.sh/react@18.2.0/jsx-runtime",
+      "bertui-icons": "/node_modules/bertui-icons/generated/index.js"
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- 🏝️ Server Island: Static content rendered at build time -->
+  <div id="root"><div class="community-q-container">
+      <header class="community-q-header">
+        <h1 class="community-q-title">Community Q&A Log</h1>
+        <p class="community-q-intro">
+          This page logs recent, specific questions asked by the BertUI community, 
+          along with official, concise answers. These questions often help shape 
+          the content of the main FAQ.
+        </p>
+        <div class="community-q-note">
+          If you have a question, please ask on our GitHub or Discord (links in the footer)!
+        </div>
+      </header>
+
+      <section class="community-q-section">
+        <CommunityQuestionItem
+          id="Q001"
+          question="I tried running the simple 'Hello World' example, but I get an error saying 'React is not defined'."
+          answer="Update to the latest BertUI version as the fix was added in v1.0.3"
+        ></CommunityQuestionItem>
+
+        <CommunityQuestionItem
+          id="Q002"
+          question="Does BertUI support deployment to Vercel/Netlify, or is it only for self-hosting with Bun?"
+          answer="Yes, the output is standard HTML/CSS/JS which can be hosted on any static hosting provider (Vercel, Netlify, Cloudflare Pages, etc.). We recommend using the provided 'build' script which generates the deployable 'dist' folder."
+        ></CommunityQuestionItem>
+
+        <CommunityQuestionItem
+          id="Q003"
+          question="What are BertUI Server Islands?"
+          answer="Server Islands are BertUI's unique feature that lets you generate static HTML at build time with a single line: export const render = \server\. This gives you perfect SEO and instant loading without sacrificing the developer experience of React."
+        ></CommunityQuestionItem>
+
+        <CommunityQuestionItem
+          id="Q004"
+          question="Can I use TypeScript with BertUI?"
+          answer="BertUI is JavaScript-first and we love keeping it simple. While we support .jsx files with full JSX syntax, we currently don't plan to add .tsx support. We believe in the simplicity and flexibility of JavaScript."
+        ></CommunityQuestionItem>
+
+        <CommunityQuestionItem
+          id="Q005"
+          question="How does BertUI's hydration work for Server Islands?"
+          answer="Server Islands use React's renderToString() to convert components to pure HTML at build time. The result is static HTML with zero JavaScript - no hydration happens. For interactivity, use regular React pages without the 'export const render = server line."
+        ></CommunityQuestionItem>
+
+        <CommunityQuestionItem
+          id="Q006"
+          question="Why can't I use CSS Modules or Sass in BertUI?"
+          answer="BertUI uses plain CSS minified by LightningCSS (10ms processing time). We prioritize speed over features. CSS Modules aren't supported, and Sass/SCSS support is being considered only if it doesn't slow down builds."
+        ></CommunityQuestionItem>
+
+        <CommunityQuestionItem
+          id="Q007"
+          question="Why are my images breaking? I put them in src/assets/"
+          answer="BertUI only processes images from two directories: src/images/ (for component images) and public/ (for global assets). This limitation keeps builds fast and enforces good file organization. Move your images to one of these folders."
+        ></CommunityQuestionItem>
+
+        <CommunityQuestionItem
+          id="Q008"
+          question="Can I use Server Islands with dynamic routes like [slug].jsx?"
+          answer="Not yet. Server Islands with dynamic routes require knowing all possible route values at build time (like Next.js getStaticPaths). This feature is on our research list for future releases."
+        ></CommunityQuestionItem>
+
+        <CommunityQuestionItem
+          id="Q009"
+          question="Does BertUI support API routes like Next.js?"
+          answer="No. BertUI is purely a frontend framework. Server Islands generate static HTML at build time, not runtime. For APIs, use a separate backend server (Express, Elysia, FastAPI, etc.)."
+        ></CommunityQuestionItem>
+
+        <CommunityQuestionItem
+          id="Q010"
+          question="How do environment variables work in BertUI?"
+          answer="Variables with PUBLIC_ or BERTUI_ prefix are known to work. Full .env support and different environment configurations are still being tested. Check our documentation for updates."
+        ></CommunityQuestionItem>
+
+        <CommunityQuestionItem
+          id="Q011"
+          question="Will Redux/Zustand/React Query work with BertUI?"
+          answer="Yes! BertUI is 98% React-compatible. Any React state management library should work. However, these only work on regular React pages - NOT on Server Islands (which are static HTML with no JavaScript)."
+        ></CommunityQuestionItem>
+
+        <CommunityQuestionItem
+          id="Q012"
+          question="Does the migration tool automatically convert my Vite/CRA code?"
+          answer="No. The 'bunx migrate-bertui' tool backs up your project to .bertmigrate/ and creates a fresh BertUI project. You manually copy components and convert code following the generated MIGRATION_GUIDE.md. It's a migration helper, not an automatic code transformer."
+        ></CommunityQuestionItem>
+
+        <CommunityQuestionItem
+          id="Q013"
+          question="Why does BertUI discourage using Vite plugins?"
+          answer="Vite plugins are Node-powered and can slow down BertUI's blazing-fast 265ms builds. While there's no technical limitation preventing their use, they defeat BertUI's core value proposition: speed. If you need Vite plugins, just use Vite."
+        ></CommunityQuestionItem>
+
+        <CommunityQuestionItem
+          id="Q014"
+          question="How do I run tests in BertUI?"
+          answer="BertUI doesn't have a built-in test runner yet. For now, manual testing via the dev server is recommended. Official testing support with recommended frameworks is coming in future updates."
+        ></CommunityQuestionItem>
+
+        <CommunityQuestionItem
+          id="Q015"
+          question="What happens if I use useState or Link in a Server Island page?"
+          answer="The build will complete but warn you. The component gets bundled as .js, but renderToString() can't handle client-side React features, so your page will render as an empty div. Server Islands must use only static JSX and <a> tags for navigation."
+        />
+
+        <div class="community-q-placeholder">
+          <p>New community questions and their answers will be logged here!</p>
+        </div>
+      </section>
+
+      
+      <div class="gs-cta-grid">
+        <a href="/" class="gs-cta-button gs-primary">
+          ← Back to Home
+        </a>
+        <a 
+          href="https://github.com/BunElysiaReact/BERTUI" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="gs-cta-button gs-secondary"
+        >
+          View on GitHub →
+        </a>
+      </div>
+    </div></div>
+  <script type="module" src="/assets/main-8qdjeq04.js"></script>
+</body>
+</html>

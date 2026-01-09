@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home-look at what bertui can do</title>
+  
+  <meta name="description" content="Bertui fast simle in a new league">
+  <meta name="keywords" content="react, bun, bertui, fast, file-based routing">
+  <meta name="author" content="Pease Ernest">
+  <meta name="theme-color" content="#667eea">
+  
+  <meta property="og:title" content="BertUI - Lightning Fast React Framework">
+  <meta property="og:description" content="Build lightning-fast React apps with zero config">
+  <meta property="og:image" content="/og-image.png">
+  
+  <link rel="stylesheet" href="/styles/bertui.min.css">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  
+  <script type="importmap">
+  {
+    "imports": {
+      "react": "https://esm.sh/react@18.2.0",
+      "react-dom": "https://esm.sh/react-dom@18.2.0",
+      "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+      "react/jsx-runtime": "https://esm.sh/react@18.2.0/jsx-runtime",
+      "bertui-icons": "/node_modules/bertui-icons/generated/index.js"
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- 🏝️ Server Island: Static content rendered at build time -->
+  <div id="root"><div class="server-islands-guide">
+      
+      <header class="si-hero">
+        <div class="si-hero-badge">🏝️ Revolutionary Feature</div>
+        <h1 class="si-hero-title">Server Islands</h1>
+        <p class="si-hero-subtitle">
+          The game-changing feature that gives you instant SEO and perfect performance 
+          without sacrificing React's developer experience.
+        </p>
+        <div class="si-hero-stats">
+          <div class="si-stat">
+            <div class="si-stat-value">0ms</div>
+            <div class="si-stat-label">Time to First Byte</div>
+          </div>
+          <div class="si-stat">
+            <div class="si-stat-value">100%</div>
+            <div class="si-stat-label">SEO Score</div>
+          </div>
+          <div class="si-stat">
+            <div class="si-stat-value">1 Line</div>
+            <div class="si-stat-label">To Enable</div>
+          </div>
+        </div>
+      </header>
+
+      
+      <section class="si-section">
+        <h2 class="si-section-title">🤔 What Are Server Islands?</h2>
+        <div class="si-content-box si-primary">
+          <p class="si-lead">
+            Server Islands are BertUI's unique approach to Static Site Generation (SSG). 
+            They let you generate static HTML at build time with a single line of code.
+          </p>
+          <p>
+            Unlike traditional SSR or SSG frameworks, Server Islands are <strong>opt-in per page</strong>. 
+            You choose which pages get pre-rendered, and which stay client-only. No complex configuration, 
+            no build-time dependencies, no server infrastructure needed.
+          </p>
+        </div>
+      </section>
+
+      
+      <section class="si-section">
+        <h2 class="si-section-title">✨ The Magic: Just One Line</h2>
+        <div class="si-code-example">
+          <div class="si-code-header">
+            <span class="si-code-filename">📄 src/pages/about.jsx</span>
+            <span class="si-code-badge">Server Island ✅</span>
+          </div>
+          <pre class="si-code-block">{`// Add this one line at the top
+export const render = "server";
+
+export const meta = {
+  title: "About Us",
+  description: "Learn about our company"
+};
+
+export default function About() {
+  return (
+    <div>
+      <h1>About Us</h1>
+      <p>This content is pre-rendered as pure HTML!</p>
+    </div></div>
+  <script type="module" src="/assets/main-8qdjeq04.js"></script>
+</body>
+</html>

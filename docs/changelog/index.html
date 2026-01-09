@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home-look at what bertui can do</title>
+  
+  <meta name="description" content="Bertui fast simle in a new league">
+  <meta name="keywords" content="react, bun, bertui, fast, file-based routing">
+  <meta name="author" content="Pease Ernest">
+  <meta name="theme-color" content="#667eea">
+  
+  <meta property="og:title" content="BertUI - Lightning Fast React Framework">
+  <meta property="og:description" content="Build lightning-fast React apps with zero config">
+  <meta property="og:image" content="/og-image.png">
+  
+  <link rel="stylesheet" href="/styles/bertui.min.css">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  
+  <script type="importmap">
+  {
+    "imports": {
+      "react": "https://esm.sh/react@18.2.0",
+      "react-dom": "https://esm.sh/react-dom@18.2.0",
+      "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+      "react/jsx-runtime": "https://esm.sh/react@18.2.0/jsx-runtime",
+      "bertui-icons": "/node_modules/bertui-icons/generated/index.js"
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- 🏝️ Server Island: Static content rendered at build time -->
+  <div id="root"><section class="changelog-page">
+      <header>
+        <h1>BertUI Changelog</h1>
+        <p>The journey to a stable, production-ready foundation with advanced features.</p>
+      </header>
+
+      
+      <div class="changelog-entry major-release">
+        <div class="version-badge">v1.2.0</div>
+        <h2>🌐 BertUI 1.1.1: SEO Suite & TypeScript</h2>
+        <p class="release-subtitle">
+          <strong>Released:</strong> January 2026 | <strong>Status:</strong> 🟢 Production SEO Ready
+        </p>
+
+        <div class="announcement">
+          <h3>🎯 Complete SEO Automation</h3>
+          <p>
+            Version 1.2 introduces <strong>automatic SEO tooling</strong> - sitemap generation, 
+            robots.txt creation, and full TypeScript support for enterprise-ready applications.
+          </p>
+          <p>
+            <strong>The magic:</strong> Define your base URL once, and BertUI generates complete 
+            SEO infrastructure automatically during build.
+          </p>
+        </div>
+
+        <div class="features">
+          <h3>🗺️ Automatic Sitemap Generation</h3>
+          <p>
+            Add <code>baseUrl</code> to your config and get a complete sitemap.xml:
+          </p>
+          <ul>
+            <li><strong>Smart Route Discovery:</strong> Automatically finds all static routes</li>
+            <li><strong>Meta Extraction:</strong> Pulls titles and descriptions from page files</li>
+            <li><strong>Priority Calculation:</strong> Homepage = 1.0, nested pages = 0.6-0.8</li>
+            <li><strong>XML Format:</strong> Standards-compliant sitemap.xml</li>
+            <li><strong>Automatic Updates:</strong> Updates with every build</li>
+          </ul>
+
+          <div style="background: rgba(0,0,0,0.05); padding: 1.5rem; border-radius: 8px; margin-top: 1rem; font-family: monospace">
+            <pre>// bertui.config.js
+export default {
+  baseUrl: "https://your-site.com",
+  // That's it! Sitemap auto-generated
+}</pre>
+          </div>
+        </div>
+
+        <div class="features">
+          <h3>🤖 Smart robots.txt Generation</h3>
+          <ul>
+            <li><strong>Custom Disallow Rules:</strong> Block admin, API, or private pages</li>
+            <li><strong>Crawl Delay Control:</strong> Set custom crawl delays</li>
+            <li><strong>Sitemap Reference:</strong> Auto-links to your sitemap.xml</li>
+            <li><strong>Config-Driven:</strong> Simple configuration in bertui.config.js</li>
+          </ul>
+
+          <div style="background: rgba(0,0,0,0.05); padding: 1.5rem; border-radius: 8px; margin-top: 1rem; font-family: monospace">
+            <pre>// Advanced robots.txt config
+robots: {
+  disallow: ["/admin", "/api", "/dashboard"],
+  crawlDelay: 1 // 1 second delay
+}</pre>
+          </div>
+        </div>
+
+        <div class="features">
+          <h3>📘 Full TypeScript Support</h3>
+          <ul>
+            <li><strong>.tsx & .ts Files:</strong> Complete support for TypeScript</li>
+            <li><strong>Type Definitions:</strong> Comprehensive .d.ts files included</li>
+            <li><strong>Config Typing:</strong> Full IntelliSense for bertui.config.js</li>
+            <li><strong>Router Typing:</strong> Type-safe routes, params, and navigation</li>
+            <li><strong>Migration Ready:</strong> Gradual adoption - mix .jsx and .tsx</li>
+          </ul>
+
+          <div style="background: rgba(0,0,0,0.05); padding: 1.5rem; border-radius: 8px; margin-top: 1rem; font-family: monospace">
+            <pre>// src/pages/blog/[slug].tsx
+import { useRouter } from 'bertui/router';
+
+interface BlogParams {
+  slug: string;
+}
+
+export default function BlogPost() {
+  const { params } = useRouter<BlogParams>();
+  return <h1>Post: {params.slug}</h1>;
+}</pre>
+          </div>
+        </div>
+
+        <div class="finalized">
+          <h3>🚀 Enterprise-Ready Features</h3>
+          <ul>
+            <li>🔍 <strong>SEO Automation:</strong> Zero-config sitemap & robots.txt</li>
+            <li>📁 <strong>Type Safety:</strong> Full TypeScript support with declarations</li>
+            <li>⚙️ <strong>Production Config:</strong> Advanced configuration system</li>
+            <li>🏝️ <strong>Server Islands:</strong> Now with TypeScript support</li>
+            <li>🔄 <strong>Build Pipeline:</strong> Integrated SEO generation</li>
+          </ul>
+        </div>
+
+        <p class="get-started-call">
+          <strong>Ready for production SEO?</strong> 
+          <a href="/server-islands">Learn about Server Islands →</a>
+        </p>
+      </div>
+
+      <hr />
+
+      
+      <div class="changelog-entry major-release">
+        <div class="version-badge">v1.1.0</div>
+        <h2>🏝️ BertUI 1.1: Server Islands Era</h2>
+        <p class="release-subtitle">
+          <strong>Released:</strong> December 2025 | <strong>Status:</strong> 🟢 Game Changer
+        </p>
+
+        <div class="announcement">
+          <h3>🎉 The Feature That Changes Everything</h3>
+          <p>
+            Version 1.1 introduces <strong>Server Islands</strong> - BertUI's unique feature that 
+            gives you instant SEO and loading speed without sacrificing React's developer experience.
+          </p>
+        </div>
+
+        <div class="features">
+          <h3>🏝️ Server Islands</h3>
+          <ul>
+            <li><strong>Instant HTML:</strong> Static content generated at build time</li>
+            <li><strong>Perfect SEO:</strong> Search engines see all content immediately</li>
+            <li><strong>Zero JavaScript:</strong> No JS needed for content pages</li>
+            <li><strong>Per-Page Choice:</strong> Use Server Islands for marketing, client-only for apps</li>
+          </ul>
+        </div>
+      </div>
+
+      <hr />
+
+      
+      <div class="changelog-entry major-release">
+        <div class="version-badge">v1.0.0</div>
+        <h2>BertUI 1.0: The Stable Foundation</h2>
+        <p class="release-subtitle">
+          <strong>Released:</strong> 17/12/2025 | <strong>Status:</strong> 🟢 Production Ready
+        </p>
+
+        <div class="announcement">
+          <h3>🏁 The Beta Journey is Complete</h3>
+          <p>
+            Version 1.0 marks the official, stable release of BertUI. The previous 35 beta 
+            versions were a focused, intense sprint to eliminate bugs and harden every core 
+            feature based on real usage.
+          </p>
+        </div>
+
+        <div class="finalized">
+          <h3>✅ Features Locked In</h3>
+          <ul>
+            <li>⚡ Sub-100ms Dev Server & 38ms Compilation</li>
+            <li>📁 Zero-Config File-Based Routing</li>
+            <li>🖼️ Reliable Static Asset Pipeline</li>
+            <li>🔧 Complete Static Site Generation (SSG)</li>
+            <li>🎨 Built-in CSS Processing & Optimization</li>
+            <li>🚨 Enhanced Error Overlay & Developer Experience</li>
+          </ul>
+        </div>
+      </div>
+
+      <hr />
+
+      
+      <div class="changelog-entry" style="background: rgba(224, 242, 254, 0.3); border: 2px solid #0ea5e9; padding: 1.5rem">
+        <h3>🎯 BertUI's Evolution: From JavaScript-First to TypeScript-Ready</h3>
+        <p>
+          <strong>We've listened to our community!</strong> While BertUI started as a 
+          JavaScript-first framework focused on simplicity, we recognize that TypeScript 
+          has become essential for production applications.
+        </p>
+        <p>
+          <strong>Our new approach:</strong> <em>JavaScript by default, TypeScript when you need it.</em>
+          You can start with simple .jsx files and gradually add TypeScript as your project grows.
+        </p>
+        <p>
+          BertUI now provides <strong>full TypeScript support</strong> with comprehensive type 
+          definitions, while maintaining our core philosophy of zero-config simplicity for 
+          JavaScript users.
+        </p>
+        <p style="margin-top: 1rem; font-style: italic">
+          🚀 <strong>BertUI's mission:</strong> The fastest React development with the right 
+          tools for every project size. Simple JavaScript for quick prototypes, TypeScript 
+          for production applications.
+        </p>
+      </div>
+
+      <hr />
+
+      
+      <div class="beta-history">
+        <h3>Beta Phase Highlights (v0.1.0 - v0.4.7)</h3>
+        
+        <div class="changelog-entry latest">
+          <h2>0.4.7 - Build System Overhaul</h2>
+          <ul>
+            <li>Complete Production Build with SEO-optimized HTML</li>
+            <li>Multi-Route HTML Generation for all routes</li>
+            <li>Reliable Asset Copying system</li>
+          </ul>
+        </div>
+
+        <div class="changelog-entry">
+          <h2>0.4.0 - Core Stability</h2>
+          <ul>
+            <li>Automatic React import injection</li>
+            <li>Fixed JSX transpilation without manual React imports</li>
+          </ul>
+        </div>
+
+        <div class="changelog-entry">
+          <h2>0.3.9 - External Library Support</h2>
+          <ul>
+            <li>CSS Import Support for external styles</li>
+            <li>Full support for importing external libraries</li>
+            <li>Complete .env file support</li>
+          </ul>
+        </div>
+
+        <div class="changelog-entry initial-release">
+          <h2>0.1.0 - Initial Release</h2>
+          <ul>
+            <li>Zero-Configuration Tooling with native JSX support</li>
+            <li>Integrated Development Server with HMR</li>
+            <li>Optimized Production Build system</li>
+          </ul>
+        </div>
+      </div>
+
+      
+      <div class="gs-cta-grid">
+        <a href="/" class="gs-cta-button gs-primary">
+          ← Back to Home
+        </a>
+        <a 
+          href="https://github.com/BunElysiaReact/BERTUI" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="gs-cta-button gs-secondary"
+        >
+          View on GitHub →
+        </a>
+      </div>
+    </section></div>
+  <script type="module" src="/assets/main-8qdjeq04.js"></script>
+</body>
+</html>

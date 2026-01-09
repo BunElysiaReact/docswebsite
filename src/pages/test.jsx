@@ -11,7 +11,7 @@ export default function TypeScriptTest() {
       <p>This page is written in TypeScript (.tsx)</p>
       
       <a href="/">
-        ← Go Home (Regular anchor tag)
+        ← Go Home (Regular a tag)
       </a>
     </div>
   );

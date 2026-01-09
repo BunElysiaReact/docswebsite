@@ -1,0 +1,13 @@
+# BertUI Generated robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://myawesomeblog.com/sitemap.xml
+
+# Custom Disallow Rules
+Disallow: /admin
+Disallow: /api
+Disallow: /drafts
+
+Crawl-delay: 1
